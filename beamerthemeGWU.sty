@@ -106,10 +106,10 @@
       \begin{column}{.75\paperwidth}
         \vskip4ex
         \raggedleft
-        \usebeamercolor{title in headline}{\color{fg}\textbf{\huge{\inserttitle}}\\[1ex]}
+        \usebeamercolor{title in headline}{\color{fg}\textbf{\Large{\inserttitle}}\\[1ex]}
         \medskip
-        \usebeamercolor{author in headline}{\color{fg}\LARGE{\insertauthor}\\[1ex]}
-        \usebeamercolor{institute in headline}{\color{fg}\LARGE{\insertinstitute}\\[1ex]}     
+        \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[1ex]}
+        \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}     
         \smallskip
       \end{column}
       \begin{column}{.02\paperwidth}
@@ -156,9 +156,11 @@
   \end{beamercolorbox}
   
   \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{footline}%
+    \vfill
     \hfill
-    \Large{\insertsubtitle}
-    \vskip1ex
+    {\insertsubtitle}
+    \vfill
+    % \vskip1ex
   \end{beamercolorbox}
 
   \begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
